@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 export const Hero = () => {
     return (
         <section className="bg-[#1a1a1a] text-white py-20 px-10 text-center">
@@ -9,9 +11,12 @@ export const Hero = () => {
             <p className="mt-6 text-gray-300 text-lg">
                 Descubre nuestra colección exclusiva de ropa urbana minimalista
             </p>
-            <button className="mt-8 bg-[#f3a41c] text-black font-bold py-3 px-8 uppercase hover:bg-orange-500 transition-colors">
+            <Link
+                to="/products"
+                className="inline-block mt-8 bg-[#f3a41c] text-black font-bold py-3 px-8 uppercase hover:bg-orange-500 transition-colors"
+            >
                 Explorar Colección
-            </button>
+            </Link>
         </section>
     );
 };
