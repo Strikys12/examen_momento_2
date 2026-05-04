@@ -3,8 +3,9 @@ import { useState } from 'react'
 import { Home } from './layouts/Home';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-
+import { Products } from './layouts/Products';
 import './App.css'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,6 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/" element={<Products />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <Footer />
     </div>
