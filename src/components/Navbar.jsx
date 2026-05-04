@@ -18,7 +18,7 @@ export const Navbar = () => {
                     <Link to="/products">Productos</Link>
                 </li>
                 <li className="hover:text-[#F3A41C] transition-colors duration-300">
-                    <Link to="/contacto">Contacto</Link>
+                    <Link to="/contact">Contacto</Link>
                 </li>
             </ul>
 
